@@ -14,7 +14,10 @@
 */
 
 body {
-  min-width: 960px;
+  width: 90%;
+  margin: 0 auto;/*here I added this line of code to
+  create a liquid layout*/
+  /*min-width: 960px;*/
 }
 
 /* `Container
