@@ -8,6 +8,66 @@
   overflow: auto;
   padding:1em 0em 0.5em 0em;
 }
-#feature, .article {
+#feature, {
+  height: 20em;
+}
+.article {
   height: 10em;
+}
+.thing {
+  background: #fff;
+  border: 1px solid #000;
+  width: 600px;
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  margin: 20% auto 0;
+}
+.thing .thing-label{
+  width: 100%;
+  position: absolute;
+  line-height: 60px;
+  color: #000;
+  left: -180px;
+  z-index: 1;
+}/* properties that shape the "type some code text"*/
+.thing .thing-text{
+  padding-left: 40px;
+  width: 0;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 11;
+  left: -280px;
+  background: cyan;
+}
+.thing .thing-text:focus{
+  width: 90%;
+  outline: none;
+  cursor: text;
+  background: #fff;
+}
+.thing .thing-text:focus + .thing-btn{
+  opacity: 1;
+  left: 520px;
+  z-index: 11;
+  background: cyan;
+}
+.thing .thing-btn{
+  position: absolute;
+  z-index: -11;
+  opacity: 0;
+  left: 0;
+  border: none;
+  top: 0;
+  cursor: pointer;
+  width: 80px;
+  height: 50px;
+}
+.thing .thing-label, .thing .thing-text, .thing .thing-btn {
+  height: 100%;
+  display: inline-block;
+  text-transform: uppercase;
+  transition: 0.4s ease;
 }
