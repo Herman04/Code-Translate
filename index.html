@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/main.css"/>
-    <link rel="stylesheet" href="css/reset.css"/>
-    <link rel="stylesheet" type="text/css" href="css/960_12_col.css"/>
-    <script src="/js/main.js" charset="utf-8"></script>
-  </head>
-  <body>
-    <div class="container_12 clearfix">
+<head>
+  <meta charset="utf-8" />
+  <title>Doris Code Translator</title>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" type="text/css" href="css/960_12_col.css"/>
+</head>
+<body>
+  <div class="container_12 clearfix">
+    <div id="feature" class="grid_12">
       <div id="header" class="grid_12">
         <h1>DORIS</h1>
-      </div>
-      <div id="feature" class="grid_12">
-        <p>
-          <form action="" class="thing">
-            <label for="muma" class="thing-label">
-              type some code...
-            </label>
-            <input type="text" name="muma" id="muma" class="thing-text">
-            <input type="submit" value="translate" class="thing-btn">
-          </form>
-        </p>
-      </div>
-      <div class="article grid_4">
-        <p>Sponsor One</p>
-      </div>
-      <div class="article grid_4">
-        <p>Sponsor Two</p>
-      </div>
-      <div class="article grid_4">
-        <p>Sponsor Three</p>
-      </div>
-      <div id="footer" class="grid_12">
-        <p>&copy; Copyright 2019</p>
-      </div>
-    </div><!-- .container_12 -->
-  </body>
+        <input class= "thing-text" id="input001"
+        type="text"/><button onclick="btn001()">Translate</button>
+          <p id="message001"></p>
+          <script>
+            function btn001() {
+              var text001;
+              var colors001 = input001.value;
+              if (colors001 == "blue"){
+                  text001 = "the color is blue";
+                  document.getElementById("message001").innerHTML = text001;
+                }
+                if (colors001 == "yellow"){
+                  text001 = "the color is yellow";
+                  document.getElementById("message001").innerHTML = text001;
+                }
+                if (colors001 !== "blue" && colors001 !== "yellow"){
+                  text001 = "contact 240-314-9505 for personalized assistance";
+                  document.getElementById("message001").innerHTML = text001;
+                }
+              }
+              </script>
+          </div>
+        </div>
+        <div class="article grid_4">
+          <p>Supporters</p>
+        </div>
+        <div class="article grid_4">
+          <p>Supporters</p>
+        </div>
+        <div class="article grid_4">
+          <p>Supporters</p>
+        </div>
+        <div id="footer" class="grid_12">
+          <p>&copy; Copyright 2019</p>
+        </div>
+  </div><!--.container_12 -->
+</body>
 </html>

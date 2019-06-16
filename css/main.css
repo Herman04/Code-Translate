@@ -1,20 +1,27 @@
 * {
   /*font-family: Arial, Verdana, sans-serif;*/
-  color: #665544;
-  text-align: center;}
+  *color: #665544;
+  text-align:center;
+}
 #feature, .article, #footer {
   background-color: #efefef;
   margin-top: 2em;
-  overflow: auto;
+  overflow:center;
   padding:1em 0em 0.5em 0em;
 }
-#feature, {
+#feature {
   height: 20em;
 }
 .article {
   height: 10em;
 }
-.thing {
+#input001 {
+  width:60%;
+  line-height: 30px;
+  cursor:auto;
+  z-index: 1;
+}
+/*.thing {
   background: #fff;
   border: 1px solid #000;
   width: 600px;
@@ -22,9 +29,9 @@
   position: relative;
   overflow: hidden;
   border-radius: 30px;
-  margin: 20% auto 0;
+  margin: 20% auto 6%;
 }
-.thing .thing-label{
+/*.thing .thing-label{
   width: 100%;
   position: absolute;
   line-height: 60px;
@@ -32,7 +39,7 @@
   left: -180px;
   z-index: 1;
 }/* properties that shape the "type some code text"*/
-.thing .thing-text{
+/*.thing .thing-text{
   padding-left: 40px;
   width: 0;
   border: none;
@@ -42,7 +49,7 @@
   left: -280px;
   background: cyan;
 }
-.thing .thing-text:focus{
+/*.thing .thing-text:focus{
   width: 90%;
   outline: none;
   cursor: text;
@@ -68,6 +75,6 @@
 .thing .thing-label, .thing .thing-text, .thing .thing-btn {
   height: 100%;
   display: inline-block;
-  text-transform: uppercase;
+  text-transform: lowercase;
   transition: 0.4s ease;
 }
