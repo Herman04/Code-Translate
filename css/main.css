@@ -21,6 +21,9 @@
   cursor:auto;
   z-index: 1;
 }
+.btn {
+  height: 38px;
+}
 /*.thing {
   background: #fff;
   border: 1px solid #000;
