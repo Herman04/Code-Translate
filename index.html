@@ -17,16 +17,16 @@
           <script>
             function btn001() {
               var text001;
-              var colors001 = input001.value;
-              if (colors001 == "blue"){
-                  text001 = "the color is blue";
+              var code001 = input001.value;
+              if (code001 == "sort id"){
+                  text001 = "(first) proc sort data= new out= newer; (then) by id; (and finally) run;";
                   document.getElementById("message001").innerHTML = text001;
                 }
-                if (colors001 == "yellow"){
-                  text001 = "the color is yellow";
+                if (code001 == "summarize"){
+                  text001 = "(first)proc means; (then)run;";
                   document.getElementById("message001").innerHTML = text001;
                 }
-                if (colors001 !== "blue" && colors001 !== "yellow"){
+                if (code001 !== "sort id" && code001 !== "summarize"){
                   text001 = "contact 240-314-9505 for personalized assistance";
                   document.getElementById("message001").innerHTML = text001;
                 }
